@@ -32,9 +32,9 @@ void setup() {
     
     // TUNE VELOCITY PID
     float kv=1.0;
-    float kp=0.65;
-    float ki=0.060;
-    float kd=0.065;
+    kp=0.65;
+    ki=0.060;
+    kd=0.065;
     motor.tune_vel_pid(kv,kp,ki,kd); 
     delay(1000); // GIVE SMC A SECOND TO SAVE NEW VALUES
 
